@@ -1,0 +1,278 @@
+body, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  max-height: 100vh;
+  color:#00252E
+}
+
+header {
+  width:100%;
+  background-image: url("../images/bg-hero-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #EDFBFF;
+  height: 74rem;
+  margin-bottom: 16rem;
+}
+
+h1,h2,h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 6rem;
+  font-weight: 600
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 6rem;
+  font-weight: 600
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 4.2  rem;
+  font-weight: 600
+}
+
+
+
+/* logo header */
+
+.header {
+  margin: auto;
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4.8rem;
+}
+
+.header > img {
+  height: 3.1rem;
+}
+
+.header_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:20rem;
+  height: 4.8rem;
+  border-radius: 1rem;
+  background-color: #FFFFFF
+}
+
+.header_button > p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Community section  */
+
+.community {
+  padding-top: 7.1rem;
+  width:90%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.community > img {
+  width:68rem;
+}
+
+.community_info > h1 {
+  padding-top: 8.6rem;
+  padding-bottom: 3.2rem;
+}
+
+.community_info > * {
+  max-width: 52rem;
+}
+
+.community_info_button {
+  margin-top: 3.2rem;
+  width:28rem;
+  height: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF52C1;
+  border-radius:3rem;
+}
+
+.community_info_button > p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color:#FFFFFF
+}
+
+/* Section with 3 articles  */
+
+section {
+  width:100%;
+}
+
+article {
+  width:123rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 4rem;
+  padding-left: 12rem;
+  box-shadow: -1px 0px 12px 0px rgba(66, 68, 90, 0.22);
+  height:44rem;
+  border-radius: 1rem;
+}
+
+article > img {
+  width: 44rem;
+
+}
+
+article:hover {
+  border: 0.3rem solid #db7ee5;
+}
+
+.card_memo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 50rem;
+
+}
+
+.card_memo > p{
+  padding-top: 1.6rem;
+  color:#808E9A
+}
+
+.card > *:nth-child(2) {
+  transform:translate(-3rem, 0);
+}
+
+
+/* Footer */
+
+footer {
+  margin-top: 34.4rem;
+  background-color: #00252E;
+  position: relative;
+
+
+}
+
+.start {
+  height:28rem;
+  width:80rem;
+  background-color: white;
+  transform: translate(-50%,-20rem);
+  box-shadow: -1px 0px 12px 0px rgba(66, 68, 90, 0.22);
+  border-radius: 1rem;
+  position: absolute;
+  left: 50%;
+
+}
+
+.details {
+
+  max-width:80%;
+  margin:auto;
+  padding-bottom: 5rem;
+  display: grid;
+  padding-top: 14rem;
+  grid-template-areas: ' hud hud hud hud'
+                       'loc about career logos'
+                       'loc do blog logos'
+                       'phone faq contact logos'
+                       'mail mail mail rights';
+  grid-template-columns: 40% 1fr 1fr 1.4fr;
+  grid-row-gap: 3rem;
+}
+
+.details >img {
+  grid-area: hud;
+  height:2.4rem;
+  filter:invert(100%) sepia(100%) saturate(1%) hue-rotate(202deg) brightness(107%) contrast(101%);
+
+}
+
+.details p {
+  color: #979797;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding-left: 2rem;
+  max-width: 70%;
+
+}
+
+.logos {
+  grid-area:logos;
+}
+
+.loc {
+  display: flex;
+  justify-content: flex-start;
+  grid-area: loc;
+}
+
+.details > div > img {
+  height:2.4rem;
+}
+
+.details > p:nth-of-type(1) {
+  grid-area:about;
+}
+
+.details > p:nth-of-type(2) {
+  grid-area:career;
+}
+
+.details > p:nth-of-type(3) {
+  grid-area:do;
+}
+
+.details > p:nth-of-type(4) {
+  grid-area:blog;
+}
+
+.details > p:nth-of-type(5) {
+  grid-area:faq;
+}
+
+.details > p:nth-of-type(6) {
+  grid-area:contact;
+}
+
+.details > p:nth-of-type(7) {
+  grid-area:rights;
+  font-size: 1.2rem;
+}
+
+
+
+.phone {
+  display: flex;
+  justify-content: flex-start;
+  grid-area:phone;
+}
+
+.email {
+  display: flex;
+  justify-content: flex-start;
+  grid-area:mail;
+}
